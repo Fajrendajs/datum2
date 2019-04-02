@@ -10,11 +10,12 @@ import '@elastic/eui/dist/eui_theme_light.css';
 class TestDatum extends Component {
   constructor(props) {
     super(props);
-    console.log('this.props.datum: ', this.props.datum);
+    this.handleChange = this.handleChange.bind(this);
   }
 
-  han(date) {
+  handleChange(date) {
     console.log('han: ', date);
+    //console.log('han2 : ', e.target.value);
     this.props.onTemperatureChange(date);
   }
 
@@ -26,8 +27,8 @@ class TestDatum extends Component {
         <EuiDatePicker
           locale="hr"
           dateFormat="DD/MM/YYYY"
-          selected={moment(this.props.datum)}
-          onChange={this.han}
+          selected={datum}
+          onChange={this.handleChange}
           className="dpTest__purpleInput"
         />
       </EuiFormRow>
