@@ -5,12 +5,17 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "@elastic/datemath": "5.0.2",
-    "@elastic/eui": "6.10.7",
+    "keyboard-key": "1.0.4",
+    "lodash": "4.17.11",
     "moment": "2.24.0",
+    "prop-types": "15.7.2",
     "react": "16.8.3",
     "react-dom": "16.8.3",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "semantic-ui-calendar-react": "0.14.4",
+    "semantic-ui-css": "2.4.1",
+    "semantic-ui-react": "0.86.0",
+    "styled-components": "4.2.0"
   },
   "devDependencies": {
     "typescript": "3.3.3"
@@ -21,10 +26,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
 }
