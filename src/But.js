@@ -1,5 +1,5 @@
-import React from 'react';
-import { Button } from 'semantic-ui-react';
+import React from "react";
+import { Button } from "semantic-ui-react";
 
 const ButtonExampleLabeledBasicShorthand = () => (
   <div>
@@ -7,19 +7,19 @@ const ButtonExampleLabeledBasicShorthand = () => (
       color="red"
       content="Like"
       icon="heart"
-      label={{ basic: true, color: 'red', pointing: 'left', content: '2,048' }}
+      label={{ basic: true, color: "red", pointing: "left", content: "2,048" }}
     />
     <Button
       basic
-      color="blue"
+      color="green"
       content="Fork"
       icon="fork"
       label={{
-        as: 'a',
+        as: "a",
         basic: true,
-        color: 'blue',
-        pointing: 'left',
-        content: '2,048'
+        color: "blue",
+        pointing: "left",
+        content: "2,048"
       }}
     />
   </div>
