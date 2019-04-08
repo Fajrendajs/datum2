@@ -1,5 +1,6 @@
 import React from 'react';
 import { Tab } from 'semantic-ui-react';
+import Dat from './Dat';
 
 const panes = [
   {
@@ -12,7 +13,12 @@ const panes = [
   },
   {
     menuItem: 'Tab 3',
-    render: () => <Tab.Pane attached={false}>Tab 3 Content</Tab.Pane>
+    render: () => (
+      <Tab.Pane attached={false}>
+        Tab 3 Content
+        {/*} <Dat />*/}
+      </Tab.Pane>
+    )
   }
 ];
 

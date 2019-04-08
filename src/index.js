@@ -3,11 +3,12 @@ import 'moment/locale/ru';
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
-import './styles.css';
+import './index.css';
 import Tab from './Tab';
 import Atlas from './Atlas';
 import Dat from './Dat';
 import But from './But';
+import Table from './Table';
 
 class App extends Component {
   constructor(props) {
@@ -22,6 +23,7 @@ class App extends Component {
         <Atlas />
         <But />
         <Dat />
+        <Table />
       </>
     );
   }
