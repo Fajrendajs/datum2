@@ -2,3 +2,48 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.ui.checkbox input:focus:checked ~ .box:before,
+.ui.checkbox input:focus:checked ~ label:before {
+  background-color: teal !important;
+  color: red !important;
+}
+
+.ui.checkbox .box:before,
+.ui.checkbox label:before {
+  background-color: grey !important;
+  color: red !important;
+}
+
+.ui.checkbox input:checked ~ .box:before,
+.ui.checkbox input:checked ~ label:before {
+  background-color: grey !important;
+  color: red !important;
+  border: red !important;
+}
+
+.ui.checkbox input:checked ~ .box:after,
+.ui.checkbox input:checked ~ label:after {
+  background-color: blue !important;
+  color: white !important;
+  border: white !important;
+}
+/**
+input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 1.2ex;
+  height: 0.4ex;
+  background: rgba(0, 0, 0, 0);
+  top: 0.9ex;
+  left: 0.4ex;
+  border: 3px solid blue;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+*/
